@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/gp1">
+        <item
+            android:id="@+id/item_privacy"
+            android:title="隱私聲明"/>
+    </group>
+
+    <group
+        android:id="@+id/gp2">
+        <item
+            android:id="@+id/item_exit"
+            android:title="退出軟件"/>
+    </group>
+
+    <group
+        android:id="@+id/gp3">
+        <item
+            android:id="@+id/item3"
+            android:title=""/>
+    </group>
+
+
+</menu>

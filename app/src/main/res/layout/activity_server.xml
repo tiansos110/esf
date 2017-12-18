@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.loginapplication.ServerActivity"
+    android:background="#7ce9b0">
+
+    <RelativeLayout
+        android:id="@+id/layout_server"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/drop"
+            android:hint="請輸入服務器地址(不能有中文)"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_address"
+            android:text="確  定"
+            android:textColor="#fbfffc"
+            android:textSize="23sp"
+            android:onClick="click"
+            android:background="@drawable/button_login_2x"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

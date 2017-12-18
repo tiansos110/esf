@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.loginapplication.IndexActivity">
+
+
+        <com.example.loginapplication.MyScrollView
+            android:id="@+id/menu_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_aaaaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:background="#01c474"
+                    android:gravity="center_vertical">
+                    <Button
+                        android:id="@+id/btn_menu"
+                        android:layout_width="33dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/btn_menu_2x" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/background_main_2x"
+                    android:backgroundTintMode="src_in"
+                    android:layout_below="@id/ll_aaaaa"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/iv"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_testroom"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/testroom_2x"/>
+
+                    <ImageView
+                        android:id="@+id/iv_practice"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_menu"
+                        android:background="@drawable/practice_2x"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/ll_first"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_lessons"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/lessons_2x"/>
+
+                    <ImageView
+                        android:id="@+id/iv_browse"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_menu"
+                        android:background="@drawable/browse_2x"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/ll_second"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/iv_circular"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circular_2x"/>
+
+                    <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_menu" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.example.loginapplication.MyScrollView>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/menu_sideslip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/main">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

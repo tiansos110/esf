@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.loginapplication.LoginActivity"
+    android:background="#7ce9b0">
+
+        <RelativeLayout
+            android:id="@+id/layout_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:background="@drawable/button_back_2x"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <com.example.loginapplication.XCRoundImageView
+                android:id="@+id/xciv_head"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/head_2x"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/xciv_head"
+                android:hint="請輸入用戶名"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@id/et_name"
+                android:hint="請輸入密碼"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_pwd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="記住密碼"
+                        android:textColor="#5c5c5c"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自動登陸"
+                        android:textColor="#5c5c5c"
+                        android:layout_marginLeft="100dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="登  陸"
+                android:textColor="#fbfffc"
+                android:textSize="23sp"
+                android:onClick="login"
+                android:layout_below="@id/rg"
+                android:background="@drawable/button_login_2x"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+
+        </RelativeLayout>
+
+</ScrollView>
